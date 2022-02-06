@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="font-size: .75rem; margin: 3vw; margin-top: 20px;">
+<body style="font-size: 12px; margin: 1vw; margin-top: 20px;">
     <!-- Logo and Name -->
-    <header style="display: flex; justify-content: space-evenly; flex-wrap: wrap; margin-bottom: 50px;">
+    <header style="display: flex; justify-content: space-evenly; flex-wrap: wrap; margin-bottom: 15px;">
         <div style="display: flex;">
             <img src="https://raw.githubusercontent.com/Interstate-Pest/imageRepo/main/IPM_Logo_SM.png" style="width: 90px; height: 80px;">
             <p style=" margin: 0px; margin-left: 15px; margin-top: 8px;">
@@ -26,14 +26,14 @@
     <article style="border: 1px solid black;">
         <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap;">
             <!-- Service Info -->
-            <div style="border: 1px dotted red; flex: 1 1 auto; margin: 15px;  width: 40vw;">
+            <div style="flex: 1 1 auto; margin: 15px;  width: 40vw;">
                 <table style="border: 0px; border-collapse: collapse; width: 100%;">
                     <tr>
-                        <td style="font-weight: bold; border: 3px solid black; padding: 5px; font-size: 14px;">
+                        <td style="font-weight: bold; border: 3px solid black; padding: 5px; font-size: 12px;">
                             SERVICE INFORMATION
                         </td>
                         <td style="padding: 5px; border: 1px solid black;">
-                            <label for="acctNum" style="font-size: 14px;">Acct #</label>
+                            <label for="acctNum" style="font-size: 12px;">Acct #</label>
                             <input type="text" name="##" style="border: 0; width: 70%;">
                         </td>
                     </tr>
@@ -78,13 +78,13 @@
                 </table>                
             </div>
             <!-- Billing Info -->
-            <div style="border: 1px dotted red; flex: 1 1 auto; margin: 15px;  width: 40vw;">
+            <div style="flex: 1 1 auto; margin: 15px;  width: 40vw;">
                 <table style="border: 0px; border-collapse: collapse; width: 100%;">
                     <tr>
-                        <td style="font-weight: bold; border: 3px solid black; padding: 5px; font-size: 14px;">
+                        <td style="font-weight: bold; border: 3px solid black; padding: 5px; font-size: 12px;">
                             BILLING INFORMATION
                         </td>
-                        <td style="padding: 5px; border: 1px solid black; font-size: 14px;">
+                        <td style="padding: 5px; border: 1px solid black; font-size: 12px;">
                             <label for="lead">Lead By</label>
                             <input type="text" name="##" style="border: 0; width: 70%;">
                         </td>
@@ -145,34 +145,62 @@
                 <span style="font-weight: bold;"><span style="font-size: 20px;">Pricing</span> (does not include tax)<br><br>
                 The price will be based upon the level of live bed bugs found during the initial treatment or during verification inspection.  The client must cooperate in order to maintain the pricing outlined below.</span>
             </p>
-            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; font-size: 12px; margin-bottom: 2vw;">
-                <div>
-                    Low Level (20 or less live bugs)&nbsp;&nbsp;
-                </div>
-                <div>
-                    <label for="intialLow">Initial $</label>
-                    <input type="text" name="initialLow" style="border: none; border-bottom: 1px solid black; width: 80px;">
-                </div>
-                <div style="display: flex; flex-wrap: wrap;">
-                    <label for="followUpLow">Follow Ups $</label>
-                    <input type="text" name="followUpLow" style="border: none; border-bottom: 1px solid black; width: 80px;">
-                    <div>Per Visit/Minimum Of 2 Follow Ups</div>
-                </div>
-            </div>
-            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; font-size: 12px; margin-bottom: 1vw;">
-                <div>
-                    Moderate Level (21-99 live bugs)
-                </div>
-                <div>
-                    <label for="intialModerate">Initial $</label>
-                    <input type="text" name="initialModerate" style="border: none; border-bottom: 1px solid black; width: 80px;">
-                </div>
-
-                <div style="display: flex; flex-wrap: wrap;">
-                    <label for="followUpModerate">Follow Ups $</label>
-                    <input type="text" name="followUpModerate" style="border: none; border-bottom: 1px solid black; width: 80px;">
-                    <div>Per Visit/Minimum Of 3 Follow Ups</div>
-                </div>
+            <div>
+                <table style="width: 100%;">
+                    <tr style="width: 100%;">
+                        <td>
+                            Low Level (20 or less live bugs)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td>
+                            <label for="initalLow">
+                                Initial $
+                            </label>
+                            <input type="text" name="initialLow" style="width: 60px; border: none; border-bottom: 1px solid black;">
+                        </td>
+                        <td>
+                            <label for="followLow">Follow Ups $</label>
+                            <input type="text" name="followLow" style="width: 60px; border: none; border-bottom: 1px solid black;">
+                            <label for="followLow">Per Visit/Minimum Of 3 Follow Ups</label>
+                        </td>
+                    </tr>
+                </table>
+                <table style="width: 100%;">
+                    <tr style="width: 100%;">
+                        <td>
+                            Moderate Level (21-99 live bugs)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td>
+                            <label for="initalLow">
+                                Initial $
+                            </label>
+                            <input type="text" name="initialLow" style="width: 60px; border: none; border-bottom: 1px solid black;">
+                        </td>
+                        <td>
+                            <label for="followLow">Follow Ups $</label>
+                            <input type="text" name="followLow" style="width: 60px; border: none; border-bottom: 1px solid black;">
+                            <label for="followLow">Per Visit/Minimum Of 3 Follow Ups</label>
+                        </td>
+                    </tr>
+                </table>
+                <table style="width: 100%;">
+                    <tr style="width: 100%;">
+                        <td>
+                            High Level (100 or more live bugs)*
+                        </td>
+                        <td>
+                            <label for="initalLow">
+                                Initial $
+                            </label>
+                            <input type="text" name="initialLow" style="width: 60px; border: none; border-bottom: 1px solid black;">
+                        </td>
+                        <td>
+                            <label for="followLow">Follow Ups $</label>
+                            <input type="text" name="followLow" style="width: 60px; border: none; border-bottom: 1px solid black;">
+                            <label for="followLow">Per Visit/Minimum Of 3 Follow Ups</label>
+                        </td>
+                    </tr>
+                </table>
+                <p style="font-size: 10px;">*(or previously treated within past 60 days by tenant or by another pest management company)</p>
             </div>
         </div>
 
